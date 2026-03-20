@@ -33,22 +33,11 @@ class _StartScreenState extends State<StartScreen> {
                 ),
               ),
             ),
-            Container(
-              color: Colors.white,
-              height: 400,
-              child: const Center(
-                child: Text(
-                  "Beach Tennis é um esporte de raquete jogado na areia, semelhante ao tênis tradicional...",
-                  style: TextStyle(fontSize: 20),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-            ),
             //Segunda parte
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                //Card 1
+                //CARD 1
                 Container(
                   width: 250,
                   padding: EdgeInsets.all(20),
@@ -154,6 +143,19 @@ class _StartScreenState extends State<StartScreen> {
                 ),
               ],
             ),
+            Container(
+              color: Colors.white,
+              height: 400,
+              child: const Center(
+                child: Text(
+                  "Beach Tennis é um esporte de raquete jogado na areia, semelhante ao tênis tradicional...",
+                  style: TextStyle(fontSize: 20),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+            //Tentar ver se é possível criar uma classe pra cards
+            //Fazer um rodapé
           ],
         ),
       ),
