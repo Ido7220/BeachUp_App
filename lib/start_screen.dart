@@ -33,10 +33,24 @@ class _StartScreenState extends State<StartScreen> {
                 ),
               ),
             ),
-            //Segunda parte
+            //Segunda parte########################################
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                Container(
+                  width: double.infinity,
+                  height: 100,
+                  color: Colors.black,
+                  child: Center(
+                    child: Text(
+                      "Uma plataforma completa para o universo do Beach Tennis",
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white,
+                      ),),
+                      
+                  )
+                ),
                 //CARD 1
                 Container(
                   width: 250,
@@ -70,7 +84,7 @@ class _StartScreenState extends State<StartScreen> {
                       SizedBox(height: 15),
                       //Título
                       Text(
-                        "Título\n",
+                        "Campeonato\n",
                         style: TextStyle(
                           fontSize: 18,
                           color: Colors.grey,
@@ -80,7 +94,7 @@ class _StartScreenState extends State<StartScreen> {
                       //Espaçamento
                       SizedBox(height: 10),
                       Text(
-                        "Descrição",
+                        "Crie e administre torneios com categorias, confrontos, resultados e organização profissional.",
 
                         //softWrap: true,
                         style: TextStyle(fontSize: 14, color: Colors.grey),
@@ -90,7 +104,7 @@ class _StartScreenState extends State<StartScreen> {
                 ),
                 //ESPAÇAMENTO ENTRE OS CARDS
                 SizedBox(width: 20),
-                //CARD 2
+                //CARD 2###########################################################
                 Container(
                   width: 250,
                   padding: EdgeInsets.all(20),
@@ -123,7 +137,7 @@ class _StartScreenState extends State<StartScreen> {
                       SizedBox(height: 15),
                       //Título
                       Text(
-                        "Título\n",
+                        "Rankings\n",
                         style: TextStyle(
                           fontSize: 18,
                           color: Colors.grey,
@@ -133,7 +147,7 @@ class _StartScreenState extends State<StartScreen> {
                       //Espaçamento
                       SizedBox(height: 10),
                       Text(
-                        "Descrição",
+                        "Acompanhe evolução, desempenho e posição dos atletas com atualização clara e moderna.",
 
                         //softWrap: true,
                         style: TextStyle(fontSize: 14, color: Colors.grey),
@@ -141,8 +155,115 @@ class _StartScreenState extends State<StartScreen> {
                     ],
                   ),
                 ),
+                //ESPAÇAMENTO ENTRE OS CARDS
+                SizedBox(width: 20),
+                //CARD 3###########################################################
+                Container(
+                  width: 250,
+                  padding: EdgeInsets.all(20),
+
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 30, 30, 30),
+                    borderRadius: BorderRadius.circular(15),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.orange,
+                        blurRadius: 20,
+                        offset: Offset(0, 10),
+                      ),
+                    ],
+                  ),
+
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      //5. Ícone com fundo laranja
+                      Container(
+                        padding: EdgeInsets.all(12),
+                        decoration: BoxDecoration(
+                          color: Colors.orange,
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Icon(Icons.favorite, color: Colors.white),
+                      ),
+                      //Espaçamento
+                      SizedBox(height: 15),
+                      //Título
+                      Text(
+                        "Reservas\n",
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.grey,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      //Espaçamento
+                      SizedBox(height: 10),
+                      Text(
+                        "Gerencie horários, disponibilidade e ocupação das quadras de forma simples e eficiente.",
+
+                        //softWrap: true,
+                        style: TextStyle(fontSize: 14, color: Colors.grey),
+                      ),
+                    ],
+                  ),
+                ),
+                //ESPAÇAMENTO ENTRE OS CARDS
+                SizedBox(width: 20),
+                //CARD 4###########################################################
+                Container(
+                  width: 250,
+                  padding: EdgeInsets.all(20),
+
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 30, 30, 30),
+                    borderRadius: BorderRadius.circular(15),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.orange,
+                        blurRadius: 20,
+                        offset: Offset(0, 10),
+                      ),
+                    ],
+                  ),
+
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      //5. Ícone com fundo laranja
+                      Container(
+                        padding: EdgeInsets.all(12),
+                        decoration: BoxDecoration(
+                          color: Colors.orange,
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Icon(Icons.favorite, color: Colors.white),
+                      ),
+                      //Espaçamento
+                      SizedBox(height: 15),
+                      //Título
+                      Text(
+                        "Reservas\n",
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.grey,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      //Espaçamento
+                      SizedBox(height: 10),
+                      Text(
+                        "Gerencie horários, disponibilidade e ocupação das quadras de forma simples e eficiente.",
+
+                        //softWrap: true,
+                        style: TextStyle(fontSize: 14, color: Colors.grey),
+                      ),
+                    ],
+                  ),
+                )
               ],
             ),
+            //Terceira parte########################################
             Container(
               color: Colors.white,
               height: 400,
@@ -156,6 +277,7 @@ class _StartScreenState extends State<StartScreen> {
             ),
             //Tentar ver se é possível criar uma classe pra cards
             //Fazer um rodapé
+            
           ],
         ),
       ),
