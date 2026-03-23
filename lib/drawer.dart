@@ -18,7 +18,7 @@ class _MenuDrawerState extends State<MenuDrawer> {
           DrawerHeader(
             decoration: BoxDecoration(color: Colors.orange),
             child: Text(
-              'Menu',
+              'Beach Up\n Beach Tennis Plataform',
               style: TextStyle(color: Colors.white, fontSize: 24),
             ),
           ),
@@ -38,8 +38,8 @@ class _MenuDrawerState extends State<MenuDrawer> {
           ),
 
           ListTile(
-            leading: Icon(Icons.abc),
-            title: Text('Coomo funicona'),
+            leading: Icon(Icons.air),
+            title: Text('Como funicona'),
             onTap: () {},
           ),
 
@@ -54,23 +54,24 @@ class _MenuDrawerState extends State<MenuDrawer> {
             title: Text('Localização'),
           ),
 
-          SizedBox(height: 150),
+          SizedBox(height: 210),
 
-          Row(
-            children: [
-              SizedBox(
-                width: double.infinity,
-                child: Center(
+          SizedBox(
+            width: double.infinity,
+      
+        
+      
                   child: ElevatedButton(
                     onPressed: () {
                       navigatorPush(context, LoginScreen());
                     },
-                    style: ElevatedButton.styleFrom(backgroundColor: Colors.amber),
+                    style: ElevatedButton.styleFrom(backgroundColor: Colors.amber,
+                    padding: EdgeInsets.symmetric(vertical: 15)),
                     child: const Text('Login'),
                   ),
-                ),
-              ),
-            ],
+                
+              
+            
           ),
         ],
       ),
